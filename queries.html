@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Queries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <header>
+        <h1>Movie Queries</h1>
+        <p>Fill out the form below to get personalized recommendations.</p>
+    </header> -->
+    <section class="showcase">
+        <div class="first">
+            <video src="explore3.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <form id="queryForm">
+                    <!-- Query 1: Display movies by actor -->
+                    
+                    <label for="actorName">Display movies with actor:</label>
+                    <input type="text" id="actorName" name="actorName">
+                    <button type="submit" class="submit-button1" onclick="show1()">Submit</button>
+                    <!-- Query 2: List movies by genre -->
+                    <label for="genre">List all movies in genre:</label>
+                    <input type="text" id="genre" name="genre">
+                    <button type="submit" class="submit-button2" onclick="show2()">Submit</button>
+                    <!-- Query 3: Display movies by language -->
+                    <label for="language">Display all movies in language:</label>
+                    <input type="text" id="language" name="language">
+                    <button type="submit" class="submit-button3" onclick="show3()">Submit</button>
+                    <!-- Query 4: Users who rated movies higher than -->
+                    <label for="rating">Find users with movie rating higher than:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="10">
+                    <button type="submit" class="submit-button4" onclick="show4()">Submit</button>
+                    <!-- Other queries can be added similarly -->  
+                </form>
+            </div>
+        </div>
+        <div class="second">
+            <div id="ans1"><h1>Bahubali</h1></div>
+            <div id="ans2"><h1>Pushpa</h1></div>
+            <div id="ans3"><h1>Bahubali, Pushpa, RRR</h1></div>
+            <div id="ans4"><h1>RRR</h1></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
